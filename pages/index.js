@@ -77,7 +77,7 @@ export default function Home() {
           ?
           data.map((user)=>{
             return(
-              <UserCard id={user.id} name={user.name} age={user.age} feesPaidOn={user.feesPaidOn} toPay={user.toPay} currMonthTimings={user.currMonthTimings} nextMonthTimings={user.nextMonthTimings}/>
+              <UserCard key={user.id} id={user.id} name={user.name} age={user.age} feesPaidOn={user.feesPaidOn} toPay={user.toPay} currMonthTimings={user.currMonthTimings} nextMonthTimings={user.nextMonthTimings}/>
             )
           })
           :
